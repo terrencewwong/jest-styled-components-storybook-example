@@ -1,0 +1,45 @@
+{
+  "name": "jest-styled-components-example",
+  "author": "Terrence Wong <wongterrencew@gmail.com>",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "lint-staged": {
+    "linters": {
+      "*.js": [
+        "lint:js",
+        "git add"
+      ]
+    }
+  },
+  "dependencies": {
+    "jest": "^20.0.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "styled-components": "^2.1.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-storyshots": "3.0.0",
+    "@storybook/react": "^3.1.3",
+    "babel-jest": "^20.0.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "husky": "^0.13.4",
+    "jest-styled-components": "^3.1.0",
+    "lint-staged": "^4.0.0",
+    "prettier-standard": "^5.1.0",
+    "react-test-renderer": "^15.6.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint:js": "prettier-standard",
+    "precommit": "lint-staged",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}
