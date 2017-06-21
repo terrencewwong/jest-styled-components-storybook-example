@@ -6,7 +6,7 @@ import renderer from 'react-test-renderer'
 // diff instead of just the change in classname
 const styledSnapshot = ({ story, context }) => {
   const storyElement = story.render(context)
-  const tree = renderer.create(storyElement, {}).toJSON()
+  const tree = renderer.create(storyElement).toJSON()
   expect(tree).toMatchStyledComponentsSnapshot()
 }
 
