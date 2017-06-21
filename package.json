@@ -1,5 +1,5 @@
 {
-  "name": "jest-styled-components-example",
+  "name": "jest-styled-components-storybook-example",
   "author": "Terrence Wong <wongterrencew@gmail.com>",
   "license": "MIT",
   "babel": {
