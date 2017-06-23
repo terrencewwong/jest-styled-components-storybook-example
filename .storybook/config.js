@@ -1,9 +1,9 @@
-/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
+import {configure} from '@storybook/react'
 
-import { configure } from '@storybook/react'
+const req = require.context('../', true, /Foo.example.js$/)
 
-function loadStories() {
-  require('../stories')
+function loadStories () {
+  req.keys().forEach(req)
 }
 
 configure(loadStories, module)

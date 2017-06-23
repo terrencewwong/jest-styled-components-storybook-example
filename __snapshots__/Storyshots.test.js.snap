@@ -38,6 +38,16 @@ exports[`Storyshots Button with text 1`] = `
 </button>
 `;
 
+exports[`Storyshots Foo default 1`] = `
+
+
+<span
+  className="classname"
+>
+  Foo
+</span>
+`;
+
 exports[`Storyshots Welcome to Storybook 1`] = `
 <div
   style={
